@@ -1,0 +1,3 @@
+find /home/kartik/nwe -name "*.c" -o -name "*.cc" -o -name "*.proto" -o -name "*.h" -o -name "*.S" > cscope.files
+cscope -b
+export CSCOPE_DB=/home/kartik/nwe/cscope.out

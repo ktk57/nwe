@@ -1,0 +1,76 @@
+
+/helloWorld : helloWorld() : 7
+
+The server is listening on NULL:8484
+
+DEBUG A new connection accept4()'ed fd = 7 server.c:460
+
+DEBUG Peer IP address: 127.0.0.1 and port = 52733, hp.c:1882
+
+DEBUG initTimer() invoked with timeout = 5000 Timer.c:520
+
+DEBUG printing the timers:
+**************************
+5000:Milliseconds
+**************************
+
+DEBUG the list alloted for the timer with timeout = 5000 is = 0xc570a0 Timer.c:535
+
+DEBUG initTimer() invoked with timeout = 100 Timer.c:520
+
+DEBUG printing the timers:
+**************************
+100:5000:Milliseconds
+**************************
+
+DEBUG the list alloted for the timer with timeout = 100 is = 0xc57100 Timer.c:535
+
+startRealTimer() invoked with timeout:5.000000 seconds
+
+stopRealTimer() invoked
+
+DEBUG data read before calling executeHTTPParser() = GET /helloWorld?ab=c&d=e HTTP/1.0
+Connection: Keep-Alive
+Host: 127.0.0.1:8484
+User-Agent: ApacheBench/2.3
+Accept: */*
+
+ hp.c:2323
+
+***MESSAGE BEGIN*** hp.c:839
+
+onHTTPReqURL() invoked with /helloWorld?ab=c&d=e *** hp.c:928
+
+onHTTPReqHeaderField() invoked Connection *** hp.c:1084
+
+DEBUG printing the query_params:
+**********************************
+
+ab:c
+d:e**********************************
+
+onHTTPReqHeaderValue() invoked Keep-Alive *** hp.c:1390
+
+onHTTPReqHeaderField() invoked Host *** hp.c:1084
+
+onHTTPReqHeaderValue() invoked 127.0.0.1:8484 *** hp.c:1390
+
+onHTTPReqHeaderField() invoked User-Agent *** hp.c:1084
+
+onHTTPReqHeaderValue() invoked ApacheBench/2.3 *** hp.c:1390
+
+onHTTPReqHeaderField() invoked Accept *** hp.c:1084
+
+onHTTPReqHeaderValue() invoked */* *** hp.c:1390
+
+onHTTPReqHeadersComplete() invoked *** hp.c:1582
+
+onHTTPReqMsgComplete() invoked *** hp.c:1706
+
+DEBUG printing the headers:
+**********************************
+
+Accept:*/*
+Connection:Keep-Alive
+Host:127.0.0.1:8484
+User-Agent:ApacheBench/2.3**********************************

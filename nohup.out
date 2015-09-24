@@ -1,0 +1,142 @@
+
+/helloWorld : helloWorld() : 7
+
+DEBUG A new connection accept4()'ed server.c:451
+
+DEBUG A new connection accept4()'ed server.c:451
+
+Peer IP address: 192.168.1.57 and port = 49247, hp.c:1911
+
+DEBUG initTimer() invoked with timeout = 10000 Timer.c:520
+
+DEBUG printing the timers:
+**************************
+10000:Milliseconds
+**************************
+
+DEBUG the list alloted for the timer with timeout = 10000 is = 0x13b7100 Timer.c:543
+
+DEBUG initTimer() invoked with timeout = 100 Timer.c:520
+
+DEBUG printing the timers:
+**************************
+100:10000:Milliseconds
+**************************
+
+DEBUG the list alloted for the timer with timeout = 100 is = 0x13b7160 Timer.c:543
+
+startRealTimer() invoked with timeout:10.000000 seconds
+
+Peer IP address: 192.168.1.57 and port = 49248, hp.c:1911
+
+DEBUG initTimer() invoked with timeout = 10000 Timer.c:520
+
+DEBUG printing the timers:
+**************************
+10000:Milliseconds
+**************************
+
+DEBUG the list alloted for the timer with timeout = 10000 is = 0x13b7520 Timer.c:543
+
+DEBUG initTimer() invoked with timeout = 100 Timer.c:520
+
+DEBUG printing the timers:
+**************************
+100:10000:Milliseconds
+**************************
+
+DEBUG the list alloted for the timer with timeout = 100 is = 0x13b7580 Timer.c:543
+
+startRealTimer() invoked with timeout:10.000000 seconds
+
+stopRealTimer() invoked
+
+DEBUG data read before calling executeHTTPParser() = GET /helloWorld?b=z&a=554&d=c&c=d HTTP/1.1
+Host: 192.168.1.58:8484
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8,hi;q=0.6
+If-Modified-Since: Mon, 09 Jul 2012 03:42:33 GMT
+
+ hp.c:2371
+
+***MESSAGE BEGIN*** hp.c:847
+
+onHTTPReqURL() invoked with /helloWorld?b=z&a=554&d=c&c=d *** hp.c:938
+
+onHTTPReqHeaderField() invoked Host *** hp.c:1095
+
+DEBUG printing the query_params:
+**********************************
+
+a:554
+b:z
+c:d
+d:c**********************************
+
+onHTTPReqHeaderValue() invoked 192.168.1.58:8484 *** hp.c:1412
+
+onHTTPReqHeaderField() invoked Connection *** hp.c:1095
+
+onHTTPReqHeaderValue() invoked keep-alive *** hp.c:1412
+
+onHTTPReqHeaderField() invoked Cache-Control *** hp.c:1095
+
+onHTTPReqHeaderValue() invoked max-age=0 *** hp.c:1412
+
+onHTTPReqHeaderField() invoked Accept *** hp.c:1095
+
+onHTTPReqHeaderValue() invoked text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 *** hp.c:1412
+
+onHTTPReqHeaderField() invoked User-Agent *** hp.c:1095
+
+onHTTPReqHeaderValue() invoked Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36 *** hp.c:1412
+
+onHTTPReqHeaderField() invoked Accept-Encoding *** hp.c:1095
+
+onHTTPReqHeaderValue() invoked gzip,deflate,sdch *** hp.c:1412
+
+onHTTPReqHeaderField() invoked Accept-Language *** hp.c:1095
+
+onHTTPReqHeaderValue() invoked en-US,en;q=0.8,hi;q=0.6 *** hp.c:1412
+
+onHTTPReqHeaderField() invoked If-Modified-Since *** hp.c:1095
+
+onHTTPReqHeaderValue() invoked Mon, 09 Jul 2012 03:42:33 GMT *** hp.c:1412
+
+onHTTPReqHeadersComplete() invoked *** hp.c:1608
+
+onHTTPReqMsgComplete() invoked *** hp.c:1727
+
+DEBUG printing the headers:
+**********************************
+
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip,deflate,sdch
+Accept-Language:en-US,en;q=0.8,hi;q=0.6
+Cache-Control:max-age=0
+Connection:keep-alive
+Host:192.168.1.58:8484
+User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36**********************************
+
+startRealTimer() invoked with timeout:10.000000 seconds
+
+evTimerTimedOutCB() invoked
+
+stopRealTimer() invoked
+
+DEBUG readTimeoutCB() called hp.c:2209
+
+DEBUG destroyTCPConn() called hp.c:2137
+
+evTimerTimedOutCB() invoked
+
+stopRealTimer() invoked
+
+DEBUG readTimeoutCB() called hp.c:2209
+
+DEBUG destroyTCPConn() called hp.c:2137
+======================================================================================
